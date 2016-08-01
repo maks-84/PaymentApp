@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="TMCoordinator" representedClassName="TMCoordinator" syncable="YES">
+        <attribute name="createBill" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paymentAccepted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coordinateNumbers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TMNumber" inverseName="coordinator" inverseEntity="TMNumber" syncable="YES"/>
+        <fetchedProperty name="totalAmount" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="TMCoordinator"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="TMNumber" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sum" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="coordinator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TMCoordinator" inverseName="coordinateNumbers" inverseEntity="TMCoordinator" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TMCoordinator" positionX="-245" positionY="-108" width="128" height="146"/>
+        <element name="TMNumber" positionX="-441" positionY="-106" width="128" height="88"/>
+    </elements>
+</model>
