@@ -21,7 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self printResult:[self getAllCoordinators]];
+   // [self printResult:[self getAllCoordinators]];
+    
     
     return YES;
 }

@@ -6,17 +6,20 @@
         <attribute name="paymentAccepted" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="coordinateNumbers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TMNumber" inverseName="coordinator" inverseEntity="TMNumber" syncable="YES"/>
-        <fetchedProperty name="totalAmount" optional="YES" syncable="YES">
-            <fetchRequest name="fetchedPropertyFetchRequest" entity="TMCoordinator"/>
-        </fetchedProperty>
+        <relationship name="paymentMonth" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TMMonth" inverseName="coordinators" inverseEntity="TMMonth" syncable="YES"/>
     </entity>
-    <entity name="TMNumber" syncable="YES">
+    <entity name="TMMonth" representedClassName="TMMonth" syncable="YES">
+        <attribute name="paymentMonth" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="coordinators" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TMCoordinator" inverseName="paymentMonth" inverseEntity="TMCoordinator" syncable="YES"/>
+    </entity>
+    <entity name="TMNumber" representedClassName="TMNumber" syncable="YES">
         <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sum" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <relationship name="coordinator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TMCoordinator" inverseName="coordinateNumbers" inverseEntity="TMCoordinator" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TMCoordinator" positionX="-245" positionY="-108" width="128" height="146"/>
-        <element name="TMNumber" positionX="-441" positionY="-106" width="128" height="88"/>
+        <element name="TMCoordinator" positionX="-245" positionY="-124" width="128" height="133"/>
+        <element name="TMMonth" positionX="-452" positionY="-115" width="128" height="73"/>
+        <element name="TMNumber" positionX="-56" positionY="-70" width="128" height="88"/>
     </elements>
 </model>
