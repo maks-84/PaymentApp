@@ -9,7 +9,7 @@
         <relationship name="paymentMonth" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TMMonth" inverseName="coordinators" inverseEntity="TMMonth" syncable="YES"/>
     </entity>
     <entity name="TMMonth" representedClassName="TMMonth" syncable="YES">
-        <attribute name="paymentMonth" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="paymentMonth" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="coordinators" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TMCoordinator" inverseName="paymentMonth" inverseEntity="TMCoordinator" syncable="YES"/>
     </entity>
     <entity name="TMNumber" representedClassName="TMNumber" syncable="YES">

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface TMAddCoordinatorViewController : ViewController
+@interface TMAddCoordinatorViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *addCoordinatorPhoneTextEdit;
 @property (weak, nonatomic) IBOutlet UITextField *addCoordinatorNameTextField;
 

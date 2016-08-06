@@ -20,8 +20,9 @@
 		2DFFF01F1D51390600122A78 /* TMNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0151D51390600122A78 /* TMNumber.m */; };
 		2DFFF0201D51390600122A78 /* TMCoordinator+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0171D51390600122A78 /* TMCoordinator+CoreDataProperties.m */; };
 		2DFFF0211D51390600122A78 /* TMCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0191D51390600122A78 /* TMCoordinator.m */; };
-		2DFFF0221D51390600122A78 /* TMMonth+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF01B1D51390600122A78 /* TMMonth+CoreDataProperties.m */; };
-		2DFFF0231D51390600122A78 /* TMMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF01D1D51390600122A78 /* TMMonth.m */; };
+		2DFFF0491D5662E100122A78 /* TMMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF0481D5662E100122A78 /* TMMonthViewController.m */; };
+		2DFFF05D1D567DEB00122A78 /* TMMonth+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF05A1D567DEB00122A78 /* TMMonth+CoreDataProperties.m */; };
+		2DFFF05E1D567DEB00122A78 /* TMMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFF05C1D567DEB00122A78 /* TMMonth.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +50,12 @@
 		2DFFF0171D51390600122A78 /* TMCoordinator+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TMCoordinator+CoreDataProperties.m"; path = "../TMCoordinator+CoreDataProperties.m"; sourceTree = "<group>"; };
 		2DFFF0181D51390600122A78 /* TMCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMCoordinator.h; path = ../TMCoordinator.h; sourceTree = "<group>"; };
 		2DFFF0191D51390600122A78 /* TMCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMCoordinator.m; path = ../TMCoordinator.m; sourceTree = "<group>"; };
-		2DFFF01A1D51390600122A78 /* TMMonth+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TMMonth+CoreDataProperties.h"; path = "../TMMonth+CoreDataProperties.h"; sourceTree = "<group>"; };
-		2DFFF01B1D51390600122A78 /* TMMonth+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TMMonth+CoreDataProperties.m"; path = "../TMMonth+CoreDataProperties.m"; sourceTree = "<group>"; };
-		2DFFF01C1D51390600122A78 /* TMMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMMonth.h; path = ../TMMonth.h; sourceTree = "<group>"; };
-		2DFFF01D1D51390600122A78 /* TMMonth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMMonth.m; path = ../TMMonth.m; sourceTree = "<group>"; };
+		2DFFF0471D5662E100122A78 /* TMMonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMonthViewController.h; sourceTree = "<group>"; };
+		2DFFF0481D5662E100122A78 /* TMMonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMonthViewController.m; sourceTree = "<group>"; };
+		2DFFF0591D567DEB00122A78 /* TMMonth+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TMMonth+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		2DFFF05A1D567DEB00122A78 /* TMMonth+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TMMonth+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
+		2DFFF05B1D567DEB00122A78 /* TMMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMonth.h; sourceTree = SOURCE_ROOT; };
+		2DFFF05C1D567DEB00122A78 /* TMMonth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMonth.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +90,14 @@
 			children = (
 				2DF4A34B1D4BEAF000E84968 /* AppDelegate.h */,
 				2DF4A34C1D4BEAF000E84968 /* AppDelegate.m */,
+				2DFFF0591D567DEB00122A78 /* TMMonth+CoreDataProperties.h */,
+				2DFFF05A1D567DEB00122A78 /* TMMonth+CoreDataProperties.m */,
+				2DFFF05B1D567DEB00122A78 /* TMMonth.h */,
+				2DFFF05C1D567DEB00122A78 /* TMMonth.m */,
 				2DF4A34E1D4BEAF000E84968 /* ViewController.h */,
 				2DF4A34F1D4BEAF000E84968 /* ViewController.m */,
+				2DFFF0471D5662E100122A78 /* TMMonthViewController.h */,
+				2DFFF0481D5662E100122A78 /* TMMonthViewController.m */,
 				2DF4A3511D4BEAF000E84968 /* Main.storyboard */,
 				2DFFF00F1D4FCA4A00122A78 /* TMAddCoordinatorViewController.h */,
 				2DFFF0101D4FCA4A00122A78 /* TMAddCoordinatorViewController.m */,
@@ -121,10 +130,6 @@
 				2DFFF0171D51390600122A78 /* TMCoordinator+CoreDataProperties.m */,
 				2DFFF0181D51390600122A78 /* TMCoordinator.h */,
 				2DFFF0191D51390600122A78 /* TMCoordinator.m */,
-				2DFFF01A1D51390600122A78 /* TMMonth+CoreDataProperties.h */,
-				2DFFF01B1D51390600122A78 /* TMMonth+CoreDataProperties.m */,
-				2DFFF01C1D51390600122A78 /* TMMonth.h */,
-				2DFFF01D1D51390600122A78 /* TMMonth.m */,
 				2DF4A3621D4BEB1300E84968 /* TMDataManager.h */,
 				2DF4A3631D4BEB1300E84968 /* TMDataManager.m */,
 			);
@@ -205,13 +210,14 @@
 				2DF4A3641D4BEB1300E84968 /* TMDataManager.m in Sources */,
 				2DF4A3501D4BEAF000E84968 /* ViewController.m in Sources */,
 				2DF4A34D1D4BEAF000E84968 /* AppDelegate.m in Sources */,
+				2DFFF0491D5662E100122A78 /* TMMonthViewController.m in Sources */,
 				2DFFF0111D4FCA4A00122A78 /* TMAddCoordinatorViewController.m in Sources */,
+				2DFFF05E1D567DEB00122A78 /* TMMonth.m in Sources */,
 				2DF4A3561D4BEAF000E84968 /* PaymentApp.xcdatamodeld in Sources */,
-				2DFFF0221D51390600122A78 /* TMMonth+CoreDataProperties.m in Sources */,
 				2DFFF01E1D51390600122A78 /* TMNumber+CoreDataProperties.m in Sources */,
 				2DFFF0211D51390600122A78 /* TMCoordinator.m in Sources */,
 				2DF4A34A1D4BEAF000E84968 /* main.m in Sources */,
-				2DFFF0231D51390600122A78 /* TMMonth.m in Sources */,
+				2DFFF05D1D567DEB00122A78 /* TMMonth+CoreDataProperties.m in Sources */,
 				2DFFF0201D51390600122A78 /* TMCoordinator+CoreDataProperties.m in Sources */,
 				2DFFF01F1D51390600122A78 /* TMNumber.m in Sources */,
 			);

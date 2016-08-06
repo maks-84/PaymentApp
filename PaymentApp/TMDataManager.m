@@ -19,6 +19,26 @@
     return manager;
 }
 
+
+-(NSArray *) getMonthInPersistentStore {
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *description = [NSEntityDescription entityForName:@"TMMonth" inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:description];
+    
+    NSArray *result = [self.managedObjectContext executeFetchRequest:request error:nil];
+    return result;
+}
+
+-(NSUInteger) getMonthCountInPersistentStore {
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *description = [NSEntityDescription entityForName:@"TMMonth" inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:description];
+    
+    return [self.managedObjectContext countForFetchRequest:request error:nil];
+}
+
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -52,7 +72,7 @@
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"PaymentApp.sqlite"];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
-    NSLog(@"%@", storeURL);
+   // NSLog(@"%@", storeURL);
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:@{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES} error:&error]) {
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];

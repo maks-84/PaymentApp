@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "TMCoordinator.h"
 #import "TMNumber.h"
+#import "TMMonthViewController.h"
+#import "TMMonth.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +24,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
    // [self printResult:[self getAllCoordinators]];
+    
+//    NSLog(@"%@",[NSDate date]);
+//    NSDateComponents *comp =
+    
+    
+    
+    TMMonthViewController *vc = [[TMMonthViewController alloc] init];
+    self.window.rootViewController = vc;
+    
+
+   // [TMMonth addNewMonth];
+  
+    TMMonth *m = [NSEntityDescription insertNewObjectForEntityForName:@"TMMonth" inManagedObjectContext:self.managedObjectContext];
+    m.paymentMonth=@"monthhh";
+    
+    [self.managedObjectContext save:nil];
+    
+    
+    
+    
+    
     
     
     return YES;

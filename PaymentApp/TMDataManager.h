@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-
+//#import "TMMonth.h"
 
 @interface TMDataManager : NSObject
 
@@ -18,6 +18,8 @@
 
 
 +(TMDataManager *)sharedManager;
+-(NSArray *) getMonthInPersistentStore;
+-(NSUInteger) getMonthCountInPersistentStore;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 

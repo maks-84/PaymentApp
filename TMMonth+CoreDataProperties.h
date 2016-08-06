@@ -2,7 +2,7 @@
 //  TMMonth+CoreDataProperties.h
 //  PaymentApp
 //
-//  Created by Mac on 02.08.16.
+//  Created by Mac on 06.08.16.
 //  Copyright © 2016 Mac. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TMMonth (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSDate *paymentMonth;
+@property (nullable, nonatomic, retain) NSString *paymentMonth;
 @property (nullable, nonatomic, retain) NSSet<TMCoordinator *> *coordinators;
 
 @end
